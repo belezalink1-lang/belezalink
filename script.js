@@ -301,7 +301,7 @@ setTimeout(() => {
                 const email = form.querySelector('[name="email"]').value;
                 
                 // --- COLE SEU LINK DO GOOGLE APPS SCRIPT AQUI ABAIXO ---
-                const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby9-xrPNob2o8V2E-YkImUQb_-szakVEfYH9owS-8iSziotPlB59pcn_SnXFarrwXKQ/exec"; 
+                const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwH2S4BsCkR7kcG2hLI9wKcAdyljM6cNT7uRgIfVGwUH080y6vzOC7qnm_R0NSPyE-U/exec"; 
                 // -------------------------------------------------------
                 
                 btn.textContent = 'Enviando...';
