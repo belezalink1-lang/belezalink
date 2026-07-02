@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#C9963C">
+    <meta name="description" content="Beleza Link - Cursos profissionalizantes para cabeleireiras. Mechas, Colorimetria, Corte e muito mais!">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Beleza Link - Cursos Profissionalizantes para Cabeleireiras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="top-banner">
+            <span>🔥 Oferta especial! Todos os cursos com valor promocional. Expira em: </span>
+            <span id="countdown" class="countdown">02:15:00</span>
+        </div>
+        <nav>
+            <div class="logo">Beleza Link</div>
+            <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Alternar tema flex">🌙</button>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#stories">Depoimentos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-eyebrow">✦ Plataforma #1 em Beleza Profissional</div>
+            <h1>Transforme Sua Carreira como <span>Cabeleireira</span></h1>
+            <p>Os cursos mais procurados do mercado da beleza em 2026. Aprenda com especialistas, conquiste seus primeiros clientes e eleve seu ticket médio em 3x.</p>
+            <div class="hero-ctas">
+                <a href="#courses" class="cta-button">🚀 Ver Cursos Disponíveis</a>
+                <a href="#stories" class="cta-secondary">⭐ Ver Depoimentos</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value">+4.200</div>
+                    <div class="stat-label">Alunas Formadas</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">10</div>
+                    <div class="stat-label">Cursos Especializados</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">7 Dias</div>
+                    <div class="stat-label">Garantia Incondicional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="courses-wrapper">
+        <div class="section-title">
+            <div class="eyebrow">✦ Especializações</div>
+            <h2>Cursos em Destaque</h2>
+            <p>Clique no play para ouvir a descrição de cada curso</p>
+        </div>
+
+        <div class="courses-grid">
+
+            <!-- Course 1 - Mechas Premium (Featured) -->
+            <div class="course-card featured">
+                <span class="course-badge badge-gold">🏆 Mais Procurado</span>
+                <div class="course-video"
+                     data-course="Mechas Premium"
+                     data-text="O curso de Mechas Premium é o mais procurado da Beleza Link! Você vai aprender as técnicas mais requisitadas do mercado: Balayage, Babylights, AirTouch, Morena Iluminada e Correção de Cor. Essa é a especialização que gera o maior ticket médio nos salões. Investimento de 997 reais, ou 12 vezes de 97 reais. Torne-se referência em coloração!">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/1fff09bc7-09e0-4b16-95b5-59a451cc1cff.png" alt="Mechas Premium - Balayage" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">✨</span>
+                    <h3>Mechas Premium 2026</h3>
+                    <p>A especialização que gera o maior ticket médio nos salões. Domine as técnicas mais requisitadas do momento e torne-se referência em coloração.</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Balayage</span>
+                        <span class="topic-tag">Babylights</span>
+                        <span class="topic-tag">AirTouch</span>
+                        <span class="topic-tag">Morena Iluminada</span>
+                        <span class="topic-tag">Correção de Cor</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 997<small>ou 12x de R$ 97</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2 - Colorimetria Avançada -->
+            <div class="course-card">
+                <span class="course-badge badge-silver">🥈 2º Lugar</span>
+                <div class="course-video"
+                     data-course="Colorimetria Avançada"
+                     data-text="O curso de Colorimetria Avançada vai te ensinar neutralização, mistura de tons, correção de manchas e técnicas avançadas para loiros e ruivos. A procura cresce a cada dia porque as clientes querem resultados personalizados e correções de cor impecáveis. Investimento de 797 reais, ou 12 vezes de 77 reais.">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/1c1ae3aca-b01b-41c3-a705-42bffed885ba.png" alt="Colorimetria Avançada" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">🎨</span>
+                    <h3>Colorimetria Avançada</h3>
+                    <p>Resultados personalizados e correções de cor impecáveis. A procura cresce a cada dia!</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Neutralização</span>
+                        <span class="topic-tag">Mistura de Tons</span>
+                        <span class="topic-tag">Correção de Manchas</span>
+                        <span class="topic-tag">Loiros</span>
+                        <span class="topic-tag">Ruivos</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 797<small>ou 12x de R$ 77</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 - Corte Feminino Atual -->
+            <div class="course-card">
+                <span class="course-badge badge-bronze">🥉 3º Lugar</span>
+                <div class="course-video"
+                     data-course="Corte Feminino Atual"
+                     data-text="O curso de Corte Feminino Atual traz as tendências mais fortes de 2026: Butterfly Cut, Italian Bob, French Bob, camadas e cortes para cabelos cacheados. Cortes com textura e movimento são a grande tendência! Investimento de 697 reais, ou 12 vezes de 67 reais.">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/1b92a32cf-d4c4-4e3b-ad3a-81e08e4f752e.png" alt="Corte Feminino Atual" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">✂️</span>
+                    <h3>Corte Feminino Atual</h3>
+                    <p>Cortes com textura e movimento - a tendência forte de 2026. Domine os cortes mais pedidos.</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Butterfly Cut</span>
+                        <span class="topic-tag">Italian Bob</span>
+                        <span class="topic-tag">French Bob</span>
+                        <span class="topic-tag">Camadas</span>
+                        <span class="topic-tag">Cacheados</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 697<small>ou 12x de R$ 67</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4 - Tricologia Capilar -->
+            <div class="course-card">
+                <div class="course-video"
+                     data-course="Tricologia Capilar"
+                     data-text="O curso de Tricologia Capilar vai te ensinar sobre queda de cabelo, saúde do couro cabeludo, caspa, oleosidade e protocolos de tratamento. A busca por tratamentos personalizados continua crescendo. Investimento de 697 reais, ou 12 vezes de 67 reais.">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/1462349f9-8ba8-4a90-abad-1c91a87da3fa.png" alt="Tricologia Capilar" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">🔬</span>
+                    <h3>Tricologia Capilar</h3>
+                    <p>Tratamentos personalizados que estão em alta. Torne-se especialista em saúde capilar.</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Queda de Cabelo</span>
+                        <span class="topic-tag">Saúde do Couro</span>
+                        <span class="topic-tag">Caspa</span>
+                        <span class="topic-tag">Oleosidade</span>
+                        <span class="topic-tag">Protocolos</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 697<small>ou 12x de R$ 67</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 5 - Prótese Capilar -->
+            <div class="course-card">
+                <span class="course-badge badge-hot">🔥 Alto Valor</span>
+                <div class="course-video"
+                     data-course="Prótese Capilar"
+                     data-text="O curso de Prótese Capilar Profissional é um nicho de alto valor com pouca concorrência! Você vai aprender técnicas masculinas e femininas, manutenção, higienização e aplicação. Uma oportunidade única no mercado! Investimento de 1297 reais, ou 12 vezes de 127 reais.">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/1a8471408-522d-42e8-afb3-c20cadfb2a0c.png" alt="Prótese Capilar" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">💇‍♀️</span>
+                    <h3>Prótese Capilar Profissional</h3>
+                    <p>Nicho de alto valor com pouca concorrência. Uma oportunidade única no mercado!</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Masculina</span>
+                        <span class="topic-tag">Feminina</span>
+                        <span class="topic-tag">Manutenção</span>
+                        <span class="topic-tag">Higienização</span>
+                        <span class="topic-tag">Aplicação</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 1.297<small>ou 12x de R$ 127</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 6 - Mega Hair -->
+            <div class="course-card">
+                <div class="course-video"
+                     data-course="Mega Hair"
+                     data-text="O curso de Mega Hair Completo vai te ensinar todas as técnicas de alongamento capilar: fita adesiva, Invisible Weft, Microlink, Queratina e Tela Costurada. Multiplique seus atendimentos! Investimento de 897 reais, ou 12 vezes de 87 reais.">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/16ff60e5f-c14f-42ae-8e3b-32ab2194a538.png" alt="Mega Hair" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">💫</span>
+                    <h3>Mega Hair Completo</h3>
+                    <p>Domine todas as técnicas de alongamento capilar e multiplique seus atendimentos.</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Fita Adesiva</span>
+                        <span class="topic-tag">Invisible Weft</span>
+                        <span class="topic-tag">Microlink</span>
+                        <span class="topic-tag">Queratina</span>
+                        <span class="topic-tag">Tela Costurada</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 897<small>ou 12x de R$ 87</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 7 - Escova Progressiva -->
+            <div class="course-card">
+                <div class="course-video"
+                     data-course="Escova Progressiva e Alinhamentos"
+                     data-text="O curso de Escova Progressiva e Alinhamentos traz técnicas sem formol, botox capilar, nanoplastia e alisamentos modernos. Resultados profissionais e seguros! Investimento de 597 reais, ou 12 vezes de 57 reais.">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/15a6783d1-b50f-4448-b150-3af04e7e692d.png" alt="Escova Progressiva e Alinhamentos" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">💆‍♀️</span>
+                    <h3>Escova Progressiva e Alinhamentos</h3>
+                    <p>Alisamentos modernos e técnicas sem formol. Resultados profissionais e seguros.</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Sem Formol</span>
+                        <span class="topic-tag">Botox Capilar</span>
+                        <span class="topic-tag">Nanoplastia</span>
+                        <span class="topic-tag">Alisamentos</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 597<small>ou 12x de R$ 57</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 8 - Cronograma Capilar -->
+            <div class="course-card">
+                <div class="course-video"
+                     data-course="Cronograma Capilar"
+                     data-text="O curso de Cronograma Capilar vai te ensinar protocolos profissionais de hidratação, nutrição e reconstrução para cabelos saudáveis. Essencial para qualquer cabeleireira! Investimento de 497 reais, ou 12 vezes de 47 reais.">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/1b0e5e5ee-627d-4478-af57-09583a2fcc40.png" alt="Cronograma Capilar" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">📅</span>
+                    <h3>Cronograma Capilar</h3>
+                    <p>Protocolos profissionais de hidratação, nutrição e reconstrução para cabelos saudáveis.</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Hidratação</span>
+                        <span class="topic-tag">Nutrição</span>
+                        <span class="topic-tag">Reconstrução</span>
+                        <span class="topic-tag">Protocolos</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 497<small>ou 12x de R$ 47</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 9 - Marketing para Cabeleireiras -->
+            <div class="course-card">
+                <span class="course-badge badge-hot">🚀 Novidade</span>
+                <div class="course-video"
+                     data-course="Marketing para Cabeleireiras"
+                     data-text="O curso de Marketing para Cabeleireiras é a novidade da Beleza Link! Aprenda a usar Instagram, Reels, inteligência artificial para criar conteúdo, captação de clientes e precificação. Lote sua agenda! Investimento de 597 reais, ou 12 vezes de 57 reais.">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/1c194ed50-54aa-44fe-8d50-8d0a1b37ae05.png" alt="Marketing para Cabeleireiras" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">📱</span>
+                    <h3>Marketing para Cabeleireiras</h3>
+                    <p>Aprenda a usar Instagram, Reels e IA para captar clientes e lotar sua agenda.</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Instagram</span>
+                        <span class="topic-tag">Reels</span>
+                        <span class="topic-tag">Captação</span>
+                        <span class="topic-tag">IA para Conteúdo</span>
+                        <span class="topic-tag">Precificação</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 597<small>ou 12x de R$ 57</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 10 - Gestão de Salão -->
+            <div class="course-card">
+                <div class="course-video"
+                     data-course="Gestão de Salão"
+                     data-text="O curso de Gestão de Salão vai transformar seu salão em um negócio de sucesso! Aprenda precificação, atendimento, fidelização e gestão financeira. Essencial para crescer! Investimento de 597 reais, ou 12 vezes de 57 reais.">
+                    <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/153e0c3ca-69c0-4cbe-8951-4dc1fa1614dc.png" alt="Gestão de Salão" loading="lazy">
+                    <div class="video-overlay"><div class="play-icon">▶</div></div>
+                    <div class="audio-wave">
+                        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <span class="course-emoji">💼</span>
+                    <h3>Gestão de Salão</h3>
+                    <p>Transforme seu salão em um negócio de sucesso com gestão profissional e estratégica.</p>
+                    <div class="course-topics">
+                        <span class="topic-tag">Precificação</span>
+                        <span class="topic-tag">Atendimento</span>
+                        <span class="topic-tag">Fidelização</span>
+                        <span class="topic-tag">Gestão Financeira</span>
+                    </div>
+                    <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo descrição...</span></div>
+                    <div class="course-price">
+                        <span class="price">R$ 597<small>ou 12x de R$ 57</small></span>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="guarantee-content">
+            <div class="guarantee-icon">🛡️</div>
+            <h2>Garantia Incondicional de 7 Dias</h2>
+            <p>Seu sucesso garantido ou seu dinheiro de volta! Se você testar qualquer um dos cursos por até 7 dias e achar que não é para você, devolvemos 100% do seu investimento. Sem burocracia, sem letras miúdas. O risco é todo nosso!</p>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories" id="stories">
+        <div class="stories-container">
+            <div class="section-title">
+                <div class="eyebrow">✦ Prova Social</div>
+                <h2>Histórias de Sucesso</h2>
+                <p>Clique no play para ouvir o depoimento de cada aluna</p>
+            </div>
+
+            <div class="stories-grid">
+
+                <!-- Story 1 -->
+                <div class="story-card">
+                    <div class="story-video"
+                         data-student="Maria Silva"
+                         data-text="Depois do curso de Mechas Premium, triplicou meu ticket médio! Hoje cobro 800 reais por um balayage e tenho agenda cheia. Foi o melhor investimento da minha carreira!">
+                        <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/1cc768f00-408e-4f94-8ecf-140697903ed2.png" alt="Maria Silva" loading="lazy">
+                        <div class="video-overlay"><div class="play-icon">▶</div></div>
+                        <div class="audio-wave">
+                            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h4>Maria Silva</h4>
+                        <div class="course-name">Mechas Premium</div>
+                        <p>"Depois do curso de Mechas Premium, triplicou meu ticket médio! Hoje cobro R$ 800 por um balayage e tenho agenda cheia."</p>
+                        <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo depoimento...</span></div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="story-card">
+                    <div class="story-video"
+                         data-student="Ana Costa"
+                         data-text="Agora consigo corrigir qualquer cor sem medo. As clientes indicam minhas amigas só pelos resultados impecáveis! Colorimetria mudou minha vida profissional!">
+                        <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/149e7233b-6566-4499-9672-491537ff15e9.png" alt="Ana Costa" loading="lazy">
+                        <div class="video-overlay"><div class="play-icon">▶</div></div>
+                        <div class="audio-wave">
+                            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h4>Ana Costa</h4>
+                        <div class="course-name">Colorimetria Avançada</div>
+                        <p>"Agora consigo corrigir qualquer cor sem medo. As clientes indicam minhas amigas só pelos resultados impecáveis!"</p>
+                        <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo depoimento...</span></div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="story-card">
+                    <div class="story-video"
+                         data-student="Juliana Santos"
+                         data-text="Esse curso de Prótese Capilar mudou minha vida! É um nicho com pouca concorrência e alto valor. Em 3 meses já tinha recuperado todo o investimento!">
+                        <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/17235e52f-2d0e-4b3f-acf6-02b07ea478bb.png" alt="Juliana Santos" loading="lazy">
+                        <div class="video-overlay"><div class="play-icon">▶</div></div>
+                        <div class="audio-wave">
+                            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h4>Juliana Santos</h4>
+                        <div class="course-name">Prótese Capilar</div>
+                        <p>"Esse curso mudou minha vida! É um nicho com pouca concorrência e alto valor. Em 3 meses já tinha recuperado o investimento."</p>
+                        <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo depoimento...</span></div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Story 4 -->
+                <div class="story-card">
+                    <div class="story-video"
+                         data-student="Carolina Oliveira"
+                         data-text="Aprendi a usar inteligência artificial para criar conteúdo e lotar minha agenda no Instagram. Em apenas 2 meses dobrei o número de clientes!">
+                        <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/187d54d10-3825-42d8-ab82-29b27e6e179f.png" alt="Carolina Oliveira" loading="lazy">
+                        <div class="video-overlay"><div class="play-icon">▶</div></div>
+                        <div class="audio-wave">
+                            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h4>Carolina Oliveira</h4>
+                        <div class="course-name">Marketing para Cabeleireiras</div>
+                        <p>"Aprendi a usar IA para criar conteúdo e lotar minha agenda no Instagram. Em 2 meses dobrei o número de clientes!"</p>
+                        <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo depoimento...</span></div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Story 5 -->
+                <div class="story-card">
+                    <div class="story-video"
+                         data-student="Fernanda Lima"
+                         data-text="Dominei todas as técnicas de Mega Hair e hoje sou referência na minha cidade. Os clientes pagam o que eu cobro sem questionar!">
+                        <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/19ffcc89a-3df4-4a77-ab91-431f32964d3b.png" alt="Fernanda Lima" loading="lazy">
+                        <div class="video-overlay"><div class="play-icon">▶</div></div>
+                        <div class="audio-wave">
+                            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h4>Fernanda Lima</h4>
+                        <div class="course-name">Mega Hair Completo</div>
+                        <p>"Dominei todas as técnicas e hoje sou referência na minha cidade. Os clientes pagam o que eu cobro sem questionar!"</p>
+                        <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo depoimento...</span></div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Story 6 -->
+                <div class="story-card">
+                    <div class="story-video"
+                         data-student="Renata Pereira"
+                         data-text="Organizei minha parte financeira e aprendi a precificar corretamente. Meu salão cresceu 200 por cento em apenas 6 meses!">
+                        <img src="https://image.qwenlm.ai/public_source/25ec0376-c01f-4331-852c-a61c1897c235/184ae64e3-1c6b-4176-983f-5a73e10f2fd0.png" alt="Renata Pereira" loading="lazy">
+                        <div class="video-overlay"><div class="play-icon">▶</div></div>
+                        <div class="audio-wave">
+                            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h4>Renata Pereira</h4>
+                        <div class="course-name">Gestão de Salão</div>
+                        <p>"Organizei minha parte financeira e aprendi a precificar corretamente. Meu salão cresceu 200% em 6 meses!"</p>
+                        <div class="audio-status"><span class="status-icon">🔊</span><span class="status-text">Reproduzindo depoimento...</span></div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <div class="section-title">
+                <div class="eyebrow">✦ Tire Suas Dúvidas</div>
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas antes de investir no seu futuro</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">Os cursos têm certificado reconhecido? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Sim! Todos os nossos cursos incluem certificado de conclusão válido em todo o território nacional, perfeito para colocar no currículo e expor no seu salão.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Por quanto tempo terei acesso ao curso? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Você terá acesso vitalício aos cursos. Você pode assistir e revisar as aulas quantas vezes quiser, de onde estiver e pelo resto da vida.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Preciso de experiência anterior para começar? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Temos cursos perfeitos para todos os níveis, seja iniciante do absoluto zero, ou profissional experiente buscando especializações avançadas.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Como funciona a Garantia? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Oferecemos 7 dias de garantia incondicional. Se você não gostar do conteúdo, basta enviar um e-mail que devolvemos 100% do seu investimento, sem burocracia.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Beleza Link</h3>
+                <p>Transformando carreiras de cabeleireiras em histórias de sucesso desde 2019. Cursos profissionalizantes de alta qualidade para você brilhar no mercado da beleza.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <a href="tel:+5562992115143">(62) 99211-5143</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <a href="https://wa.me/5562992115143" target="_blank" rel="noopener">WhatsApp</a>
+                </div>
+                <a href="https://wa.me/5562992115143?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20da%20Beleza%20Link" target="_blank" rel="noopener" class="whatsapp-button">
+                    💬 Fale Conosco
+                </a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <div class="contact-item"><a href="#courses">📚 Nossos Cursos</a></div>
+                <div class="contact-item"><a href="#stories">⭐ Depoimentos</a></div>
+                <div class="contact-item"><a href="#contact">📞 Contato</a></div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📸</div>
+                    <a href="https://www.instagram.com/belezalink/" target="_blank" rel="noopener">@belezalink</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✈️</div>
+                    <a href="https://t.me/+RpdFs0NZFMc5MGIx" target="_blank" rel="noopener">Grupo do Telegram</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🤖</div>
+                    <a href="https://t.me/BelezaLinkBot" target="_blank" rel="noopener">Bot de Atendimento</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/belezalink/" target="_blank" rel="noopener" class="social-btn instagram" aria-label="Instagram">📸</a>
+                    <a href="https://t.me/+RpdFs0NZFMc5MGIx" target="_blank" rel="noopener" class="social-btn telegram" aria-label="Telegram">✈️</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2019 Beleza Link. Todos os direitos reservados.</p>
+            <p>Transformando paixões em carreiras de sucesso</p>
+        </div>
+    </footer>
+
+    <!-- Lead Capture Pop-up -->
+    <div class="lead-popup-overlay" id="lead-popup">
+        <div class="lead-popup-box">
+            <button class="close-popup" aria-label="Fechar popup">&times;</button>
+            <div class="popup-content">
+                <h3>Ganhe 15% OFF! 🎁</h3>
+                <p>Deixe seu melhor e-mail e ganhe um cupom de desconto para a sua 1ª especialização conosco.</p>
+                <form id="lead-form">
+                    <input type="text" name="nome" placeholder="Seu nome..." required>
+                    <input type="email" name="email" placeholder="Seu e-mail profissional..." required>
+                    <button type="submit">Quero Meu Desconto!</button>
+                </form>
+                <small>100% de privacidade garantida.</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Floating Checkout Bar -->
+    <div class="mobile-float-bar" id="mobile-float-bar">
+        <div class="float-bar-info">
+            <span class="float-course-name">Nossos Cursos</span>
+            <span class="float-price">Aproveite</span>
+        </div>
+        <button class="float-buy-btn">Comprar</button>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5562992115143?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20da%20Beleza%20Link"
+       target="_blank" rel="noopener"
+       class="floating-whatsapp"
+       title="Fale conosco no WhatsApp"
+       aria-label="WhatsApp">
+        💬
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
