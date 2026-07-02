@@ -347,7 +347,7 @@ setTimeout(() => {
             };
         }
     }
-}, 15000); // 15 Segundos
+}, 5000); // 5 Segundos
 
 // ============================================
 // MOBILE FLOATING BAR LOGIC
