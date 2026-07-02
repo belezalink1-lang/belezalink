@@ -290,9 +290,19 @@ nav {
     font-family: 'Nunito', sans-serif;
     font-size: clamp(2.6rem, 6vw, 4.5rem);
     font-weight: 900;
-    line-height: 1.12;
+    line-height: 1.2;
     letter-spacing: -1px;
     margin-bottom: 1.5rem;
+}
+
+.rotating-text {
+    display: block;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--rose) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInOut 3s ease-in-out;
+    min-height: 1.3em;
 }
 
 .hero-content h1 span {
@@ -358,6 +368,13 @@ nav {
     border-color: var(--primary);
     color: var(--text);
     transform: translateY(-2px);
+}
+
+@keyframes fadeInOut {
+    0%   { opacity: 0; transform: translateY(10px); }
+    20%  { opacity: 1; transform: translateY(0); }
+    80%  { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
 }
 
 /* Hero stats */

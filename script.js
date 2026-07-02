@@ -1,4 +1,27 @@
 // ============================================
+// TÍTULO ANIMADO - ROTAÇÃO DE FRASES
+// ============================================
+const rotatingEl = document.getElementById('rotating-text');
+if (rotatingEl) {
+    const frases = [
+        'Sua Nova Carreira na Beleza Começa Aqui 💛',
+        'Cursos que Revelam o Melhor de Você ✨',
+        'Aprenda, Pratique e Cresça na Beleza 🌸',
+        'Especialize-se e Conquiste Mais Clientes 🚀',
+    ];
+    let fraseAtual = 0;
+
+    function trocarFrase() {
+        rotatingEl.style.animation = 'none';
+        rotatingEl.offsetHeight; // force reflow
+        fraseAtual = (fraseAtual + 1) % frases.length;
+        rotatingEl.textContent = frases[fraseAtual];
+        rotatingEl.style.animation = 'fadeInOut 3s ease-in-out';
+    }
+    setInterval(trocarFrase, 3200);
+}
+
+// ============================================
 // MENU MOBILE (HAMBURGER)
 // ============================================
 const menuToggle = document.querySelector('.menu-toggle');
