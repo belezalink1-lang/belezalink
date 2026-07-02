@@ -307,10 +307,23 @@ setTimeout(() => {
                 btn.textContent = 'Enviando...';
                 
                 function concluirEnvio() {
-                    btn.textContent = textoOriginal;
-                    alert('Cupom enviado com sucesso! Verifique seu e-mail.');
-                    popup.classList.remove('show');
-                    localStorage.setItem('popupViewed', 'true');
+                    btn.textContent = 'Enviado com Sucesso! ✅';
+                    btn.style.background = '#25D366'; // Fica Verde
+                    btn.style.boxShadow = '0 8px 30px rgba(37, 211, 102, 0.4)';
+                    btn.style.color = 'white';
+                    
+                    setTimeout(() => {
+                        popup.classList.remove('show');
+                        localStorage.setItem('popupViewed', 'true');
+                        
+                        // Reseta o formulário caso ele abra a página de novo depois
+                        setTimeout(() => {
+                            btn.textContent = textoOriginal;
+                            btn.style.background = '';
+                            btn.style.boxShadow = '';
+                            form.reset();
+                        }, 500);
+                    }, 2500); // Fecha automaticamente após 2,5 segundos
                 }
                 
                 if (GOOGLE_SCRIPT_URL) {
